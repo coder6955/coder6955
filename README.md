@@ -10,16 +10,23 @@ My work includes Kafka and Debezium CDC pipelines, transactional outbox workflow
 
 ## Selected open-source work
 
-Status checked on **30 September 2026**. Pull request links show the latest review and merge status.
+Status checked on **15 October 2026**. Pull request links show the latest review and merge status.
 
 | Project | Contribution | Status |
 | --- | --- | --- |
 | [Apprise](https://github.com/caronc/apprise/pull/1756) | Fixed Matrix rich-text title/body separation and matching message-size accounting; added regression coverage for direct and encrypted notifications. | **Merged** |
+| [Kroxylicious](https://github.com/kroxylicious/kroxylicious/pull/5112) | Replaced deprecated Java Operator SDK APIs, migrated operator metrics, and documented metric-name and PromQL changes. Verified 118 focused operator tests. | Open; ready for review |
+| [Kroxylicious](https://github.com/kroxylicious/kroxylicious/pull/5113) | Fixed Kafka share-group cleanup so a missing group cannot mask a consumption failure. Verified 486 module tests on Linux and five additional share-consumer runs. | Open; ready for review |
 | [Failsafe](https://github.com/failsafe-lib/failsafe/pull/402) | Proposed a fix for circuit breaker statistics after inactivity, with deterministic clock-based tests and a regression for the failure threshold. | Open; awaiting review |
-| [JHipster](https://github.com/jhipster/jhipster.github.io/pull/1745) | Corrected a Bootstrap Sass example that failed to compile; verified import order against generator templates and compiled the example. | Draft; awaiting review |
-| [Apprise](https://github.com/caronc/apprise/pull/1760) | Proposed optional YAML support for embedded applications, with isolated interpreter tests and branch coverage for disabled/missing YAML. | Draft; awaiting review |
+| [ThingsBoard](https://github.com/thingsboard/thingsboard/pull/16248) | Quoted and escaped PostgreSQL timeseries partition identifiers; verified generated DDL and TTL paths against PostgreSQL. | Draft; full build validation pending |
+| [JHipster](https://github.com/jhipster/jhipster.github.io/pull/1745) | Corrected a Bootstrap Sass example that failed to compile; verified import order against generator templates and compiled the example. | Open; ready for review |
+| [Apprise](https://github.com/caronc/apprise/pull/1760) | Proposed optional YAML support for embedded applications, with isolated interpreter tests and branch coverage for disabled/missing YAML. | Closed; not merged |
 
 [Read the Failsafe case study: diagnosing a sliding-window circuit breaker bug](https://github.com/coder6955/coder6955/blob/main/case-studies/failsafe-circuit-breaker.md).
+
+### Investigation and regression coverage
+
+For [REA's SQLite snapshot size-limit issue](https://github.com/morluto/rea/issues/4127#issuecomment-6194342656), I implemented a typed, non-retryable resource-limit error with exact byte counts and CLI/MCP regression coverage. Linux validation passed 122 tests with three conditional skips, plus static and documentation checks. I also verified the compiled CLI against a real 270 MB database. The tested patch and evidence were shared for reuse in an overlapping contribution; I did not submit a separate PR.
 
 ## Engineering experience
 

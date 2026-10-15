@@ -4,7 +4,7 @@
 
 **Evidence:** [Issue #390](https://github.com/failsafe-lib/failsafe/issues/390) · [Pull request #402](https://github.com/failsafe-lib/failsafe/pull/402) · [Patch and regression tests](https://github.com/failsafe-lib/failsafe/pull/402/files)
 
-**Status on 30 September 2026:** proposed fix; open and awaiting maintainer review. This case study describes the submitted change and local validation, not an accepted release or measured production impact.
+**Status on 15 October 2026:** proposed fix; open and awaiting maintainer review. This case study describes the submitted change and local validation, not an accepted release or measured production impact.
 
 ## Observable failure
 
