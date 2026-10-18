@@ -10,12 +10,12 @@ My work includes Kafka and Debezium CDC pipelines, transactional outbox workflow
 
 ## Selected open-source work
 
-Status checked on **15 October 2026**. Pull request links show the latest review and merge status.
+Status checked on **18 October 2026**. Pull request links show the latest review and merge status.
 
 | Project | Contribution | Status |
 | --- | --- | --- |
 | [Apprise](https://github.com/caronc/apprise/pull/1756) | Fixed Matrix rich-text title/body separation and matching message-size accounting; added regression coverage for direct and encrypted notifications. | **Merged** |
-| [Kroxylicious](https://github.com/kroxylicious/kroxylicious/pull/5112) | Replaced deprecated Java Operator SDK APIs, migrated operator metrics, and documented metric-name and PromQL changes. Verified 118 focused operator tests. | Open; ready for review |
+| [Kroxylicious](https://github.com/kroxylicious/kroxylicious/pull/5112) | Replaced deprecated Java Operator SDK APIs, migrated operator metrics, and documented metric-name and PromQL changes. Verified 118 focused operator tests; [upstream unit tests passed on Java 21 and 25](https://github.com/kroxylicious/kroxylicious/actions/runs/38729111778). | Open; Kubernetes and documentation CI also passed; awaiting review |
 | [Kroxylicious](https://github.com/kroxylicious/kroxylicious/pull/5113) | Fixed Kafka share-group cleanup so a missing group cannot mask a consumption failure. Verified 486 module tests on Linux and five additional share-consumer runs. | Open; ready for review |
 | [Failsafe](https://github.com/failsafe-lib/failsafe/pull/402) | Proposed a fix for circuit breaker statistics after inactivity, with deterministic clock-based tests and a regression for the failure threshold. | Open; awaiting review |
 | [ThingsBoard](https://github.com/thingsboard/thingsboard/pull/16248) | Quoted and escaped PostgreSQL timeseries partition identifiers; verified generated DDL and TTL paths against PostgreSQL. | Draft; full build validation pending |
