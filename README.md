@@ -10,15 +10,16 @@ My work includes Kafka and Debezium CDC pipelines, transactional outbox workflow
 
 ## Selected open-source work
 
-Status checked on **18 October 2026**. Pull request links show the latest review and merge status.
+Status checked on **25 October 2026**. Pull request links show the latest review and merge status.
 
 | Project | Contribution | Status |
 | --- | --- | --- |
 | [Apprise](https://github.com/caronc/apprise/pull/1756) | Fixed Matrix rich-text title/body separation and matching message-size accounting; added regression coverage for direct and encrypted notifications. | **Merged** |
-| [Kroxylicious](https://github.com/kroxylicious/kroxylicious/pull/5112) | Replaced deprecated Java Operator SDK APIs, migrated operator metrics, and documented metric-name and PromQL changes. Verified 118 focused operator tests; [upstream unit tests passed on Java 21 and 25](https://github.com/kroxylicious/kroxylicious/actions/runs/38729111778). | Open; Kubernetes and documentation CI also passed; awaiting review |
+| [Kroxylicious](https://github.com/kroxylicious/kroxylicious/pull/5169) | Made Error Prone reject static clock reads, replaced a clock-dependent test fixture with `Instant.EPOCH`, and documented one intentional run timestamp. Verified 144 tests per JDK on Java 21 and 25. | **Merged**; maintainer approved and upstream CI passed |
+| [Kroxylicious](https://github.com/kroxylicious/kroxylicious/pull/5112) | Replaced deprecated Java Operator SDK APIs, migrated operator metrics, and documented metric-name and PromQL changes. [Verified 794 operator tests per JDK on Java 21 and 25](https://github.com/coder6955/kroxylicious/actions/runs/40032514006), plus documentation packaging. | Open; metrics compatibility design under review; fresh upstream CI pending approval |
 | [Kroxylicious](https://github.com/kroxylicious/kroxylicious/pull/5113) | Fixed Kafka share-group cleanup so a missing group cannot mask a consumption failure. Verified 486 module tests on Linux and five additional share-consumer runs. | Open; ready for review |
 | [Failsafe](https://github.com/failsafe-lib/failsafe/pull/402) | Proposed a fix for circuit breaker statistics after inactivity, with deterministic clock-based tests and a regression for the failure threshold. | Open; awaiting review |
-| [ThingsBoard](https://github.com/thingsboard/thingsboard/pull/16248) | Quoted and escaped PostgreSQL timeseries partition identifiers; verified generated DDL and TTL paths against PostgreSQL. | Draft; full build validation pending |
+| [ThingsBoard](https://github.com/thingsboard/thingsboard/pull/16248) | Quoted and escaped PostgreSQL timeseries partition identifiers; verified generated DDL and TTL paths against PostgreSQL. | Open; DAO build and 14 focused tests passed; upstream TeamCity remains unresolved |
 | [JHipster](https://github.com/jhipster/jhipster.github.io/pull/1745) | Corrected a Bootstrap Sass example that failed to compile; verified import order against generator templates and compiled the example. | Open; ready for review |
 | [Apprise](https://github.com/caronc/apprise/pull/1760) | Proposed optional YAML support for embedded applications, with isolated interpreter tests and branch coverage for disabled/missing YAML. | Closed; not merged |
 
